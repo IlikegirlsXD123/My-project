@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile</title>
+
+<!-- Bootstrap 5 -->
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+<!-- CSS ของเรา -->
+<link rel="stylesheet" href="index_6.css">
+
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            My Profile
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">
+                        Skills
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">
+                        Projects
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="container text-center">
+
+        <p class="hero-subtitle">
+            Hello, I'm
+        </p>
+
+        <h1>
+            Kawin Kaveeupsorn
+        </h1>
+
+        <p>
+            Student / Programmer / Suankularb
+        </p>
+
+        <a href="#about" class="btn btn-light btn-lg">
+            About Me
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- Image -->
+
+            <div class="col-12 col-md-6 text-center">
+
+                <img
+                    src="data:image/jpeg;base64,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"
+                    class="profile-image"
+                    alt="Profile">
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="col-12 col-md-6">
+
+                <p class="section-label">
+                    ABOUT ME
+                </p>
+
+                <h2>
+                    เกี่ยวกับฉัน
+                </h2>
+
+                <p>
+                    สวัสดีครับ ผมเป็นนุกเรียนที่สนใจด้านการเขียนโปรแกรม
+                    และการพัฒนาเว็บไซต์
+                </p>
+
+                <p>
+                    สนใจการนำเทคโนโลยีมาใช้ในการเรียน
+                    และการพัฒนาโครงงาน
+                </p>
+
+                <a href="#projects"
+                   class="btn btn-primary">
+                    ดูผลงาน
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="section-label">
+                MY SKILLS
+            </p>
+
+            <h2>
+                ทักษะที่สนใจ
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- HTML -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card skill-card h-100 p-4">
+
+                    <div class="card-body">
+
+                        <div class="card-icon">
+                            HTML
+                        </div>
+
+                        <h3>
+                            HTML
+                        </h3>
+
+                        <p class="text-muted">
+                            การสร้างโครงสร้างเว็บไซต์
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CSS -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card skill-card h-100 p-4">
+
+                    <div class="card-body">
+
+                        <div class="card-icon">
+                            CSS
+                        </div>
+
+                        <h3>
+                            CSS
+                        </h3>
+
+                        <p class="text-muted">
+                            การออกแบบและตกแต่งเว็บไซต์
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- JavaScript -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card skill-card h-100 p-4">
+
+                    <div class="card-body">
+
+                        <div class="card-icon">
+                            JS
+                        </div>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p class="text-muted">
+                            การทำให้เว็บไซต์โต้ตอบกับผู้ใช้
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <p class="section-label">
+                MY PROJECTS
+            </p>
+
+            <h2>
+                ผลงานของฉัน
+            </h2>
+
+            <p>
+                ตัวอย่างโปรเจกต์ที่เคยสร้างขึ้น
+                เพื่อฝึกทักษะการเขียนโปรแกรม
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card project-card h-100">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600"
+                        class="card-img-top"
+                        alt="Web Project">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Website Project
+                        </h5>
+
+                        <p class="card-text">
+                            เว็บไซต์ที่สร้างด้วย HTML และ CSS
+                        </p>
+
+                        <a href="index.html"
+                           class="btn btn-primary">
+                            ดูรายละเอียด
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card project-card h-100">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
+                        class="card-img-top"
+                        alt="Programming Project">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Python Project
+                        </h5>
+
+                        <p class="card-text">
+                            โปรแกรมที่สร้างด้วยภาษา Python
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-primary">
+                            ดูรายละเอียด
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 3 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card project-card h-100">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600"
+                        class="card-img-top"
+                        alt="Coding Project">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Coding Project
+                        </h5>
+
+                        <p class="card-text">
+                            โปรเจกต์สำหรับฝึกการแก้ปัญหา
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-primary">
+                            ดูรายละเอียด
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section bg-light">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-4">
+
+                <div class="card h-100 p-3">
+
+                    <div class="card-body">
+
+                        <h3>
+                            Contact
+                        </h3>
+
+                        <p>
+                            extrakawin@email.com
+                        </p>
+
+                        <p>
+                            092-727-6163
+                        </p>
+
+                        <p>
+                            Thailand
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-md-8">
+
+                <div class="card h-100 p-3">
+
+                    <div class="card-body">
+
+                        <p class="section-label">
+                            CONTACT ME
+                        </p>
+
+                        <h2>
+                            ติดต่อฉัน
+                        </h2>
+
+                        <p>
+                            หากสนใจสามารถติดต่อได้ตามช่องทาง
+                            ด้านล่าง
+                        </p>
+
+                        <a href="#"
+                           class="btn btn-primary">
+                            Facebook
+                        </a>
+
+                        <a href="#"
+                           class="btn btn-dark">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="d-flex justify-content-between
+                    align-items-center flex-wrap gap-3">
+
+            <p class="mb-0">
+                My Profile
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>
+
